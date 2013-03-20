@@ -1,0 +1,41 @@
+$site-width: 960px
+
+@media screen and (min-width: 320px)
+  $site-width: 320px
+@media screen and (min-width: 480px)
+  $site-width: 480px
+@media screen and (min-width: 768px)
+  $site-width: 768px
+@media screen and (min-width: 1024px)
+  $site-width: 960px
+
+
+/* Percentage width calculator from site width */
+@mixin width($width)
+  width: percentage($width / $site-width)
+
+/* Grid System Calculation */
+
+$grid-width: 30px
+$gutter-width: 10px
+
+@mixin grid-width($n)
+  $grid: $n * $grid-width + ($n - 1) * $gutter-width
+  width: percentage($grid / $site-width)
+
+
+/* #sidebar { width: grid-width(5); }*/
+
+
+/* Border radius */ 
+
+@mixin border-radius($value, $moz: true, $webkit: true, $css3: true)
+  @if $moz 
+    -moz-border-radius: $value 
+  @if $webkit 
+    -webkit-border-radius: $value
+  @if $css3 
+    border-radius: $value
+
+
+/* @include border-radius(10px, $webkit: false); */
