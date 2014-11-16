@@ -1,0 +1,25 @@
+{
+  "name": "HTML5-Sass",
+  "version": "1.0.0",
+  "description": "HTML5-Sass",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.1",
+    "gulp-uglify": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgiebe/HTML5-Sass.git"
+  },
+  "author": "Danny Giebe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgiebe/HTML5-Sass/issues"
+  },
+  "homepage": "https://github.com/dgiebe/HTML5-Sass"
+}
