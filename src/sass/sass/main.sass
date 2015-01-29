@@ -1,15 +1,57 @@
-.site 
-  width: $site-width
-  height: 300px
-  background: #eee
 
-aside
-  @include grid-width(3) 
-  background: #ccc
-  height: 300px
-  @include border-radius(10px)
+body 
+  font-family: 'Lato', sans-serif
+
+
+section 
+  min-height: 768px
+
+
+//Sections
+#design
+  background: #E4E4E1
+  background-image: radial-gradient(50% 100%, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%)
+  background-image: linear-gradient(0deg, rgba(255,255,255,0.00) 0%, rgba(143,152,157,0.53) 100%)
   
-header
-  height: 400px
-  background: #000
-  width: 100%
+  .card 
+    border-color: #E4E4E1
+
+#language
+  background: #A2A2A4
+  background-image: radial-gradient(53% 232%, rgba(255,255,255,0.50) 57%, rgba(0,0,0,0.50) 100%)
+
+  .card
+    border-color: #A2A2A4
+
+
+h1 
+  font-size: 30px
+  color: #232328
+  line-height: 36px
+  text-transform: uppercase
+  margin: 0 0 60px 0
+  text-align: center
+  font-weight: 300
+
+h2
+  font-size: 18px
+  font-weight: 300
+  color: #545353
+  line-height: 22px
+  text-transform: uppercase
+  text-align: center
+  margin-top: 278px
+
+.content
+  margin: 0 auto
+  max-width: 1170px
+  padding-top: 100px
+
+
+.card
+  background: #fff
+  width: 250px
+  height: 360px
+  border: 1px solid
+
+
